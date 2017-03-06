@@ -127,7 +127,6 @@ public final class StudentsLogic {
      * This method should be used by admin only since the searching does not restrict the
      * visibility according to the logged-in user's google ID. This is used by admin to
      * search students in the whole system.
-     * @param queryString
      * @return null if no result found
      */
     public StudentSearchResultBundle searchStudentsInWholeSystem(String queryString) {
@@ -362,9 +361,6 @@ public final class StudentsLogic {
 
     /**
      * Validates sections for any limit violations and teams for any team name violations.
-     * @param studentList
-     * @param courseId
-     * @throws EnrollException
      */
     public void validateSectionsAndTeams(List<StudentAttributes> studentList, String courseId) throws EnrollException {
 
@@ -384,9 +380,6 @@ public final class StudentsLogic {
 
     /**
      * Validates teams for any team name violations.
-     * @param studentList
-     * @param courseId
-     * @throws EnrollException
      */
     public void validateTeams(List<StudentAttributes> studentList, String courseId) throws EnrollException {
 

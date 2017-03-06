@@ -120,8 +120,9 @@ public class GaeSimulation {
     }
 
     /**
+     * Returns an {@link Action} object that matches the parameters given.
+     *
      * @param parameters Parameters that appear in a HttpServletRequest received by the app.
-     * @return an {@link Action} object that matches the parameters given.
      */
     public Action getActionObject(String uri, String... parameters) {
         HttpServletRequest req = createWebRequest(uri, parameters);
@@ -132,8 +133,9 @@ public class GaeSimulation {
     }
 
     /**
+     * Returns an {@link AutomatedAction} object that matches the parameters given.
+     *
      * @param parameters Parameters that appear in a HttpServletRequest received by the app.
-     * @return an {@link AutomatedAction} object that matches the parameters given.
      */
     public AutomatedAction getAutomatedActionObject(String uri, String... parameters) {
         HttpServletRequest req = createWebRequest(uri, parameters);
